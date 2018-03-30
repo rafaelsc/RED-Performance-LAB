@@ -1,0 +1,120 @@
+/*-----------------------------------------*/
+/* Extra Resetting */
+/*-----------------------------------------*/
+
+* {
+   box-sizing: border-box;
+   outline: none;
+}
+
+strong, b, strong *, b * {
+  font-style: normal;
+  font-weight: bold !important;
+}
+
+em, i, em *, i * {
+  font-style: italic;
+}
+
+fieldset,
+img,
+a img {
+  border: 0;
+}
+
+img {
+   height: auto;
+   max-width: 100%;
+}
+
+/*-----------------------------------------*/
+/* Global */
+/*-----------------------------------------*/
+
+html {
+   font-size: 20px;
+   font-weight: 300;
+}
+
+body {
+   background:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../../images/meteor_bkgd.jpg') top center fixed,;
+   background-size: cover;
+}
+
+/* Typography */
+
+body,
+button,
+input {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: .8rem;
+   line-height: 1.25;
+
+   @include tablet {
+      font-size: .9rem;
+   }
+
+   @include desktop {
+      font-size: 1rem;
+   }
+}
+
+h1 {
+   font-size: 1.8rem;
+   font-weight: 400;
+   margin-bottom: $base-space-unit;
+
+   @include tablet {
+      font-size: 2rem;
+   }
+}
+
+h2 {
+   color: $dark-grey;
+   font-family: 'Droid Serif', serif;
+   font-size: 1.5rem;
+   font-weight: 400;
+   margin-bottom: $base-space-unit;
+
+   @include tablet {
+      font-size: 1.8rem;
+   }
+}
+
+h3 {
+   color: $brand-blue;
+   font-size: 1.2rem;
+   font-weight: 700;
+   margin-bottom: $base-space-unit;
+
+   @include tablet {
+      font-size: 1.5rem;
+   }
+}
+
+p {
+   margin-bottom: $base-space-unit;
+}
+
+a {
+   color: $brand-orange;
+   text-decoration: none;
+
+   &:hover {
+      color: darken($brand-orange, 25%);
+   }
+}
+
+/*-----------------------------------------*/
+/* Helpers */
+/*-----------------------------------------*/
+
+.container {
+   margin: 0 auto;
+   max-width: 1000px;
+   padding-left: $base-space-unit;
+   padding-right: $base-space-unit;
+   width: 100%;
+}

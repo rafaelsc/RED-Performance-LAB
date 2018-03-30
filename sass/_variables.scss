@@ -1,0 +1,29 @@
+// VARIABLES
+//
+// Site-wide variables
+
+// Breakpoints
+
+$tablet-width: 600px;
+$desktop-width: 1000px;
+
+// Colour palette
+
+$brand-orange: #f96332;
+$brand-blue: #28537b;
+$light-grey: #dbdbdb;
+$med-grey: #c2c2c2;
+$dark-grey: #646464;
+$near-black: #2e2e2e;
+
+// Typography
+
+$base-font-color: $near-black;
+$base-font-size: 1rem;
+
+// Box Model
+
+$base-space-unit: 1rem;
+$light-grey-border: 1px solid #dbdbdb;
+$med-grey-border: 1px solid #c8c8c8;
+$dark-grey-border: 1px solid #646464;

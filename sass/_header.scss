@@ -1,0 +1,57 @@
+/*-----------------------------------------*/
+/* Header */
+/*-----------------------------------------*/
+
+.site-header {
+   align-items: center;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   justify-content: center;
+   text-align: center;
+
+   .logo {
+      height: 150px;
+      margin-bottom: $base-space-unit * 2;
+      width: 150px;
+
+      @include tablet {
+         height: 225px;
+         width: 225px;
+      }
+
+      @include desktop {
+         height: 300px;
+         width: 300px;
+      }
+   }
+
+   h1 {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin-bottom: $base-space-unit * .5;
+      text-transform: uppercase;
+
+      @include tablet {
+         font-size: 2.4rem;
+      }
+
+      @include desktop {
+         font-size: 3rem;
+      }
+   }
+
+   p {
+      font-size: 1rem;
+
+      @include tablet {
+         font-size: 1.2rem;
+      }
+
+      @include desktop {
+         font-size: 1.6rem;
+      }
+   }
+}

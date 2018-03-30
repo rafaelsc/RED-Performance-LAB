@@ -1,0 +1,71 @@
+/*-----------------------------------------*/
+/* Footer */
+/*-----------------------------------------*/
+
+.site-footer {
+   background: rgba(0, 0, 0, 0.5);
+   color: white;
+   padding-bottom: $base-space-unit * 2;
+   padding-top: $base-space-unit * 2;
+
+   .site-info {
+      @include tablet {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+
+   a:hover {
+      color: lighten($brand-orange, 20%);
+   }
+
+   .copyright {
+      border-bottom: $dark-grey-border;
+      margin-bottom: $base-space-unit;
+
+      @include tablet {
+         border-bottom: 0;
+         border-right: $dark-grey-border;
+         flex: 0 1 50%;
+         margin-bottom: 0;
+         padding-right: $base-space-unit;
+      }
+
+      @include desktop {
+         flex: 0 1 67%;
+      }
+
+      .footer-logo {
+         margin-bottom: $base-space-unit * 2;
+         max-width: 300px;
+
+         @include tablet {
+            max-width: 200px;
+         }
+
+         @include desktop {
+            max-width: 300px;
+         }
+      }
+   }
+
+   .social-links {
+      @include tablet {
+         flex: 0 1 50%;
+         padding-left: $base-space-unit;
+      }
+
+      @include desktop {
+         flex: 33%;
+      }
+
+      ul {
+         display: flex;
+
+         li {
+            margin-right: $base-space-unit / 2;
+            max-width: 35px;
+         }
+      }
+   }
+}

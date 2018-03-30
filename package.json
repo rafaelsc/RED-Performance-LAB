@@ -1,0 +1,22 @@
+{
+  "name": "performance-lab",
+  "version": "1.0.0",
+  "description": "An exercise in building performant websites.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "moment": "^2.14.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4"
+  },
+  "author": "mandiwise",
+  "license": "ISC"
+}

@@ -1,0 +1,221 @@
+/*-----------------------------------------*/
+/* Content */
+/*-----------------------------------------*/
+
+.site-content {
+   background-color: white;
+   padding: ($base-space-unit * 2) 0;
+
+   .ajax-loader {
+      display: block;
+      margin: 0 auto;
+   }
+
+   h2 {
+      text-align: center;
+   }
+}
+
+.ajax-loader {
+  height: 50px;
+  margin: $base-space-unit auto;
+  width: 50px;
+}
+
+.intro {
+   color: darken($med-grey, 30%);
+   font-size: 125%;
+   line-height: 1.5;
+   margin: 0 auto ($base-space-unit * 2);
+   max-width: 800px;
+   text-align: center;
+}
+
+.neos-list {
+   border-bottom: $med-grey-border;
+   padding-bottom: $base-space-unit * 2;
+
+   h3 {
+      border-top: $med-grey-border;
+      padding-top: $base-space-unit;
+
+      @include tablet {
+
+         &:first-of-type {
+            padding-top: $base-space-unit * 2;
+         }
+
+         &:not(:first-of-type) {
+            border-top: 0;
+         }
+      }
+   }
+
+   table {
+      margin-bottom: $base-space-unit;
+      width: 100%;
+
+      thead {
+         display: none;
+
+         @include tablet {
+            border-top: $light-grey-border;
+            display: table-header-group;
+         }
+      }
+
+      tr {
+         border: 1px solid $near-black;
+         display: block;
+         margin-bottom: $base-space-unit;
+
+         @include tablet {
+            border: 0;
+            border-bottom: $med-grey-border;
+            display: table-row;
+            margin-bottom: 0;
+         }
+      }
+
+      tbody {
+         tr {
+            @include tablet {
+
+            }
+         }
+      }
+
+      th, td {
+         display: block;
+
+         @include tablet {
+            display: table-cell;
+            text-align: center;
+
+            &:not(:last-child) {
+               border-right: $light-grey-border;
+            }
+         }
+      }
+
+      th {
+         background-color: #f1f1f1;
+         font-family: 'Droid Serif', serif;
+
+         @include tablet {
+            padding: ($base-space-unit / 2) $base-space-unit;
+         }
+      }
+
+      td {
+         padding: 0 $base-space-unit;
+         margin: $base-space-unit 0;
+
+         &[data-header='Name'] {
+            font-weight: 700;
+         }
+
+         @include tablet {
+            padding: ($base-space-unit / 2) $base-space-unit;
+         }
+      }
+
+      td {
+         &:before {
+            border-bottom: 1px dashed $med-grey;
+            color: $dark-grey;
+            content: attr( data-header );
+            display: block;
+            font-size: 110%;
+            font-family: 'Droid Serif', serif;
+            font-weight: 400;
+            margin-bottom: $base-space-unit / 3;
+            padding-bottom: $base-space-unit / 3;
+
+            @include tablet {
+               display: none;
+            }
+         }
+      }
+   }
+}
+
+.calls-to-action {
+   background-color: white;
+   padding-bottom: $base-space-unit * 2;
+
+   .action-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+
+      a {
+         font-weight: 700;
+      }
+
+      &:last-child {
+         h2 {
+            display: none;
+
+            @include desktop {
+               display: block;
+            }
+         }
+      }
+
+      @include desktop {
+         flex-wrap: nowrap;
+      }
+   }
+
+   .action {
+      flex: 0 1 100%;
+      margin-bottom: $base-space-unit;
+
+      &:last-child {
+         .cta-icon {
+            display: none;
+         }
+      }
+
+      @include tablet {
+         flex: 0 1 48%;
+         max-width: 48%;
+
+         &:last-child {
+            flex: 0 1 100%;
+            max-width: 100%;
+         }
+      }
+
+      @include desktop {
+         flex: 0 1 30%;
+         max-width: 30%;
+
+         &:last-child {
+            flex: 0 1 30%;
+            max-width: 30%;
+
+            .cta-icon {
+               display: block;
+            }
+         }
+      }
+   }
+
+   .cta-icon {
+      display: block;
+      margin: 0 auto $base-space-unit;
+      max-height: 60px;
+      width: auto;
+
+      @include tablet {
+         max-height: 80px;
+      }
+
+      @include desktop {
+         max-height: 100px;
+      }
+   }
+}

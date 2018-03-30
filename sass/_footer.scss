@@ -59,9 +59,13 @@
          flex: 33%;
       }
 
+      a {
+        color: white;
+      }
+      
       ul {
          display: flex;
-
+ 
          li {
             margin-right: $base-space-unit / 2;
             max-width: 35px;
